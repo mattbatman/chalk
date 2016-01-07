@@ -1,2 +1,2 @@
 # chalk
-Chalk will be a quite simple css/less framework. I'd like to take the basic premise of skeleton (http://getskeleton.com/), but tweak a few things I don't like or understand.
+Chalk will be a quite simple css/less framework. I'm heavily relying on skeleton (http://getskeleton.com/) and primer (http://primercss.io/). This is mostly meant as a learning exercise.

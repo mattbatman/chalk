@@ -1,0 +1,42 @@
+/*   VARIABLES   */
+/*   INCLUDES   */
+.clearfix:before {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container:before {
+  display: table;
+  content: "";
+}
+.container:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.row:before {
+  display: table;
+  content: "";
+}
+.row:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+/*   CUSTOM CLASSES   */

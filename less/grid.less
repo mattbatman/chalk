@@ -1,0 +1,29 @@
+.clearfix {
+  &:before {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: @container-width;
+  margin-right: auto;
+  margin-left: auto;
+  .clearfix;
+}
+
+.row {
+  margin-right: -@grid-gutter;
+  margin-left: -@grid-gutter;
+  .clearfix;
+}
