@@ -9,8 +9,13 @@
   clear: both;
   content: "";
 }
-* {
+html {
   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 .container {
   max-width: 960px;
@@ -38,5 +43,13 @@
   display: table;
   clear: both;
   content: "";
+}
+.column {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.one-universal {
+  width: 8.33333333%;
 }
 /*   CUSTOM CLASSES   */

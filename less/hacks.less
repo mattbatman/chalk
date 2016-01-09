@@ -1,0 +1,27 @@
+// clearfix
+  // taken from https://github.com/primer/primer/blob/master/scss/_mixins.scss
+.clearfix {
+  &:before {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+//box sizing
+// per nick petit of treehouse:
+  // the box-sizing property in combination with the border-box value
+  // uses the width property as the actual rendered width.
+  // http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts
+// code from https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
