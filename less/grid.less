@@ -24,6 +24,9 @@
   padding-left: @grid-gutter;
 }
 
+// Less loops used to generate columns at universal (ie. all), medium and up,
+// and large-only screen sizes
+  // see Less loops http://lesscss.org/features/#loops-feature
 .generate-columns(@number-of-grid-columns);
 
 .generate-columns(@n, @i: 1) when (@i =< @n) {
