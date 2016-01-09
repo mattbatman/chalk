@@ -24,150 +24,33 @@
   padding-left: @grid-gutter;
 }
 
-.one-universal {
-  width: 100%*(1/12);
-}
+.generate-columns(@number-of-grid-columns);
 
-.two-universal {
-  width: 100%*(2/12);
-}
-
-.three-universal {
-  width: 100%*(3/12);
-}
-
-.four-universal {
-  width: 100%*(4/12);
-}
-
-.five-universal {
-  width: 100%*(5/12);
-}
-
-.six-universal {
-  width: 100%*(6/12);
-}
-
-.seven-universal {
-  width: 100%*(7/12);
-}
-
-.eight-universal {
-  width: 100%*(8/12);
-}
-
-.nine-universal {
-  width: 100%*(9/12);
-}
-
-.ten-universal {
-  width: 100%*(10/12);
-}
-
-.eleven-universal {
-  width: 100%*(11/12);
-}
-
-.twelve-universal {
-  width: 100%*(12/12);
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+  .@{i}-universal {
+    width: (@i * 100% / @n);
+  }
+  .generate-columns(@n, (@i + 1));
 }
 
 @media (min-width: @small-to-medium-screen) {
-  .one-medium {
-    width: 100%*(1/12);
-  }
+  .generate-columns(@number-of-grid-columns);
 
-  .two-medium {
-    width: 100%*(2/12);
-  }
-
-  .three-medium {
-    width: 100%*(3/12);
-  }
-
-  .four-medium {
-    width: 100%*(4/12);
-  }
-
-  .five-medium {
-    width: 100%*(5/12);
-  }
-
-  .six-medium {
-    width: 100%*(6/12);
-  }
-
-  .seven-medium {
-    width: 100%*(7/12);
-  }
-
-  .eight-medium {
-    width: 100%*(8/12);
-  }
-
-  .nine-medium {
-    width: 100%*(9/12);
-  }
-
-  .ten-medium {
-    width: 100%*(10/12);
-  }
-
-  .eleven-medium {
-    width: 100%*(11/12);
-  }
-
-  .twelve-medium {
-    width: 100%*(12/12);
+  .generate-columns(@n, @i: 1) when (@i =< @n) {
+    .@{i}-medium {
+      width: (@i * 100% / @n);
+    }
+    .generate-columns(@n, (@i + 1));
   }
 }
 
 @media (min-width: @medium-to-large-screen) {
-  .one-large {
-    width: 100%*(1/12);
-  }
+  .generate-columns(@number-of-grid-columns);
 
-  .two-large {
-    width: 100%*(2/12);
-  }
-
-  .three-large {
-    width: 100%*(3/12);
-  }
-
-  .four-large {
-    width: 100%*(4/12);
-  }
-
-  .five-large {
-    width: 100%*(5/12);
-  }
-
-  .six-large {
-    width: 100%*(6/12);
-  }
-
-  .seven-large {
-    width: 100%*(7/12);
-  }
-
-  .eight-large {
-    width: 100%*(8/12);
-  }
-
-  .nine-large {
-    width: 100%*(9/12);
-  }
-
-  .ten-large {
-    width: 100%*(10/12);
-  }
-
-  .eleven-large {
-    width: 100%*(11/12);
-  }
-
-  .twelve-large {
-    width: 100%*(12/12);
+  .generate-columns(@n, @i: 1) when (@i =< @n) {
+    .@{i}-large {
+      width: (@i * 100% / @n);
+    }
+    .generate-columns(@n, (@i + 1));
   }
 }
