@@ -30,7 +30,7 @@
 .generate-columns(@number-of-grid-columns);
 
 .generate-columns(@n, @i: 1) when (@i =< @n) {
-  .@{i}-universal {
+  .universal-@{i} {
     width: (@i * 100% / @n);
   }
   .generate-columns(@n, (@i + 1));
@@ -40,7 +40,7 @@
   .generate-columns(@number-of-grid-columns);
 
   .generate-columns(@n, @i: 1) when (@i =< @n) {
-    .@{i}-medium {
+    .medium-@{i} {
       width: (@i * 100% / @n);
     }
     .generate-columns(@n, (@i + 1));
@@ -51,7 +51,7 @@
   .generate-columns(@number-of-grid-columns);
 
   .generate-columns(@n, @i: 1) when (@i =< @n) {
-    .@{i}-large {
+    .large-@{i} {
       width: (@i * 100% / @n);
     }
     .generate-columns(@n, (@i + 1));

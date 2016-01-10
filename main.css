@@ -49,115 +49,115 @@ html {
   padding-right: 10px;
   padding-left: 10px;
 }
-.1-universal {
+.universal-1 {
   width: 8.33333333%;
 }
-.2-universal {
+.universal-2 {
   width: 16.66666667%;
 }
-.3-universal {
+.universal-3 {
   width: 25%;
 }
-.4-universal {
+.universal-4 {
   width: 33.33333333%;
 }
-.5-universal {
+.universal-5 {
   width: 41.66666667%;
 }
-.6-universal {
+.universal-6 {
   width: 50%;
 }
-.7-universal {
+.universal-7 {
   width: 58.33333333%;
 }
-.8-universal {
+.universal-8 {
   width: 66.66666667%;
 }
-.9-universal {
+.universal-9 {
   width: 75%;
 }
-.10-universal {
+.universal-10 {
   width: 83.33333333%;
 }
-.11-universal {
+.universal-11 {
   width: 91.66666667%;
 }
-.12-universal {
+.universal-12 {
   width: 100%;
 }
 @media (min-width: 550px) {
-  .1-medium {
+  .medium-1 {
     width: 8.33333333%;
   }
-  .2-medium {
+  .medium-2 {
     width: 16.66666667%;
   }
-  .3-medium {
+  .medium-3 {
     width: 25%;
   }
-  .4-medium {
+  .medium-4 {
     width: 33.33333333%;
   }
-  .5-medium {
+  .medium-5 {
     width: 41.66666667%;
   }
-  .6-medium {
+  .medium-6 {
     width: 50%;
   }
-  .7-medium {
+  .medium-7 {
     width: 58.33333333%;
   }
-  .8-medium {
+  .medium-8 {
     width: 66.66666667%;
   }
-  .9-medium {
+  .medium-9 {
     width: 75%;
   }
-  .10-medium {
+  .medium-10 {
     width: 83.33333333%;
   }
-  .11-medium {
+  .medium-11 {
     width: 91.66666667%;
   }
-  .12-medium {
+  .medium-12 {
     width: 100%;
   }
 }
 @media (min-width: 775px) {
-  .1-large {
+  .large-1 {
     width: 8.33333333%;
   }
-  .2-large {
+  .large-2 {
     width: 16.66666667%;
   }
-  .3-large {
+  .large-3 {
     width: 25%;
   }
-  .4-large {
+  .large-4 {
     width: 33.33333333%;
   }
-  .5-large {
+  .large-5 {
     width: 41.66666667%;
   }
-  .6-large {
+  .large-6 {
     width: 50%;
   }
-  .7-large {
+  .large-7 {
     width: 58.33333333%;
   }
-  .8-large {
+  .large-8 {
     width: 66.66666667%;
   }
-  .9-large {
+  .large-9 {
     width: 75%;
   }
-  .10-large {
+  .large-10 {
     width: 83.33333333%;
   }
-  .11-large {
+  .large-11 {
     width: 91.66666667%;
   }
-  .12-large {
+  .large-12 {
     width: 100%;
   }
 }
