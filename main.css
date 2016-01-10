@@ -162,9 +162,15 @@ html {
   }
 }
 body {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 100%;
   line-height: 1.375;
+  background-color: white;
+  color: black;
+}
+p {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: black;
 }
 h1,
 h2,
@@ -175,6 +181,8 @@ h6 {
   margin-top: 15px;
   margin-bottom: 15px;
   line-height: 1.1;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: black;
 }
 h1 {
   font-size: 6.85352607em;
@@ -198,11 +206,80 @@ tt,
 code {
   font-family: Consolas, monaco, monospace;
   font-size: 0.75em;
+  color: grey;
 }
 pre {
   margin-top: 0;
   margin-bottom: 0;
   font-family: Consolas, monaco, monospace;
   font-size: 0.75em;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: black;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: black;
+  border-color: black;
+  outline: 0;
+}
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: white;
+  background-color: blue;
+  border-color: blue;
+}
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: white;
+  background-color: blue;
+  border-color: blue;
 }
 /*   CUSTOM CLASSES   */

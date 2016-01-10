@@ -5,19 +5,37 @@
 /*   VARIABLES   */
 
 //used in grid.less
-@container-width:         960px;
-@grid-gutter:             10px;
-@small-to-medium-screen:  550px;
-@medium-to-large-screen:  775px;
-@number-of-grid-columns:  12;
+@container-width:             960px;
+@grid-gutter:                 10px;
+@small-to-medium-screen:      550px;
+@medium-to-large-screen:      775px;
+@number-of-grid-columns:      12;
 
 // used in typography.less
-@serif-font-stack:        Georgia,Times,"Times New Roman",serif;
-@sans-serif-font-stack:   "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
-@mono-font-stack:         Consolas,monaco,monospace;
-@body-font-stack:         @serif-font-stack;
-@header-font-stack:       @sans-serif-font-stack;
-@code-font-stack:         @mono-font-stack;
+@serif-font-stack:            Georgia,Times,"Times New Roman",serif;
+@sans-serif-font-stack:       "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+@mono-font-stack:             Consolas,monaco,monospace;
+@body-font-stack:             @sans-serif-font-stack;
+@p-font-stack:                @serif-font-stack;
+@header-font-stack:           @sans-serif-font-stack;
+@code-font-stack:             @mono-font-stack;
+@button-font-stack:           @sans-serif-font-stack;
+
+// colors
+@link-color:                        blue;
+@p-color:                           black;
+@body-color:                        black;
+@code-color:                        grey;
+@header-color:                      black;
+@background-color:                  white;
+@button-border-color:               black;
+@button-font-color:                 black;
+@button-hover-border-color:         black;
+@button-hover-font-color:           black;
+@button-prominent-fill-color:       blue;
+@button-prominent-text-color:       white;
+@button-prominent-hover-fill-color: blue;
+@button-prominent-hover-text-color: white;
 
 
 /*   INCLUDES   */
@@ -25,6 +43,7 @@
 @import "hacks.less";
 @import "grid.less";
 @import "typography.less";
+@import "buttons.less";
 
 
 

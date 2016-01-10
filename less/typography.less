@@ -6,6 +6,13 @@ body {
   font-family: @body-font-stack;
   font-size: 100%;
   line-height: 1.375;
+  background-color: @background-color;
+  color: @body-color;
+}
+
+p {
+  font-family: @p-font-stack;
+  color: @p-color;
 }
 
 
@@ -21,6 +28,8 @@ h6 {
   margin-top: 15px;
   margin-bottom: 15px;
   line-height: 1.1;
+  font-family: @header-font-stack;
+  font-family: @header-color;
 }
 
 // Default scale based on the golden ratio
@@ -38,6 +47,7 @@ tt,
 code {
   font-family: @mono-font-stack;
   font-size: 12em/16;
+  color: @code-color;
 }
 
 pre {
@@ -45,4 +55,16 @@ pre {
   margin-bottom: 0;
   font-family: @mono-font-stack;
   font-size: 12em/16;
+}
+
+// Links
+  //slightly modified from https://github.com/primer/primer/blob/master/scss/_base.scss
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
 }
