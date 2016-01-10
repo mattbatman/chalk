@@ -1,0 +1,48 @@
+// Attempt to implement http://alistapart.com/article/fluidgrids
+
+// Body
+
+body {
+  font-family: @body-font-stack;
+  font-size: 100%;
+  line-height: 1.375;
+}
+
+
+// Headings Margin
+  // from https://github.com/primer/primer/blob/master/scss/_type.scss
+  // but pixels in font-size replace with em
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+// Default scale based on the golden ratio
+h1 { font-size: 1em * 1.618 * 1.618 * 1.618 * 1.618; }
+h2 { font-size: 1em * 1.618 * 1.618 * 1.618; }
+h3 { font-size: 1em * 1.618 * 1.618; }
+h4 { font-size: 1em * 1.618; }
+h5 { font-size: 0.618em; }
+h6 { font-size: 0.382em; }
+
+// Code
+  // slightly modified from https://github.com/primer/primer/blob/master/scss/_type.scss
+
+tt,
+code {
+  font-family: @mono-font-stack;
+  font-size: 12em/16;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: @mono-font-stack;
+  font-size: 12em/16;
+}

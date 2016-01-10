@@ -161,4 +161,48 @@ html {
     width: 100%;
   }
 }
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 100%;
+  line-height: 1.375;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+h1 {
+  font-size: 6.85352607em;
+}
+h2 {
+  font-size: 4.23580103em;
+}
+h3 {
+  font-size: 2.617924em;
+}
+h4 {
+  font-size: 1.618em;
+}
+h5 {
+  font-size: 0.618em;
+}
+h6 {
+  font-size: 0.382em;
+}
+tt,
+code {
+  font-family: Consolas, monaco, monospace;
+  font-size: 0.75em;
+}
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Consolas, monaco, monospace;
+  font-size: 0.75em;
+}
 /*   CUSTOM CLASSES   */
